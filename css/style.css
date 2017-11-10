@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,600');
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -7,5 +9,49 @@
 }
 
 html {
-  
+  background-color: #eeede3;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.top-nav {
+  background-color: #dbce53;
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  list-style: none;
+}
+
+
+.top-nav li a {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #eeede3;
+  margin: 0 20px;
+}
+
+.landing {
+  background-image: url("../images/sidewalks2_xl.jpg");
+  background-size: cover;
+  background-position: center;
+  /*should strech to cover entire background*/
+  height: calc(100vh - 50px);
+  /*height: 100vh;
+  vh= veiwport height for height of the window*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0000;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Fjalla One", sans-serif;
 }
