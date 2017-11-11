@@ -13,35 +13,45 @@ html {
 }
 
 body {
-  padding-top: 50px;
+  padding-top: 0px;
 }
 
 .top-nav {
   background-color: #dbce53;
   height: 50px;
-  position: fixed;
-  top: 0px;
+  position: absolute;
+  bottom: -20px;
   left: 0px;
   width: 100%;
   list-style: none;
+  display: flex;
 }
 
+.top-nav ul {
+  margin: auto;
+  display: flex;
+  list-style: none;
+}
 
 .top-nav li a {
   font-family: "Work Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
   font-weight: 600;
   color: #eeede3;
-  margin: 0 20px;
+  margin: 0 80px;
+  padding-bottom: 25px;
+
 }
 
 .landing {
-  background-image: url("../images/sidewalks2_xl.jpg");
+  background-image: url("../images/bw_poster_xl.jpg");
   background-size: cover;
   background-position: center;
+  height: 100vh;
+  width: 100%;
   /*should strech to cover entire background*/
-  height: calc(100vh - 50px);
+  /*height: calc(100vh - 50px);*/
   /*height: 100vh;
   vh= veiwport height for height of the window*/
   display: flex;
@@ -64,23 +74,36 @@ h1 {
 
 @media (max-width: 700px) {
   .landing {
-    background-image: url("../images/sidewalk_med.jpeg");
+    background-image: url("../images/bw_poster_med.jpg");
   }
 }
 
 .row {
   display: flex;
+  overflow: hidden;
 }
 
-.col-3 {
-  width: 33.33%;
+.bottom {
+  display: flex;
+  overflow: hidden;
 }
+
+
+.col-4 {
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width: 25%;
+}
+
+
+
 
 @media (max-width: 700px) {
   .row {
     display: block;
   }
-  .col-3 {
+  .col-4 {
     width: 100%;
   }
 }
